@@ -8,6 +8,17 @@ This project allows users to upload their Google Timeline Location History data 
 -   **Generate Heatmap**: Visualize your travels on a heatmap.
 -   **Date Range Filter**: Filter the heatmap by specifying a custom date range.
 
+## Example Screenshots
+
+Here are some example screenshots of the application in action:
+1. **Uploading Google Timeline Data:**
+   - Screenshot of the upload page where users can select their `.json` file.
+   ![Upload Screen](./assets/upload_screen_example.png)
+
+2. **Generated Heatmap:**
+   - Screenshot of the heatmap generated after uploading the Google Timeline data, visualizing locations visited.
+   ![Heatmap Example](./assets/heatmap_example.png)
+
 ## Installation
 
 1.  Clone the Repository:
@@ -17,11 +28,14 @@ This project allows users to upload their Google Timeline Location History data 
     ```
 2.  Install Required Dependencies:
     ```bash
-    pip install -r requirements.txt
+    sudo apt install python3
+    sudo apt install python3-pip
+    pip install flask
+    pip install folium
     ```
 3.  Run the Application:
     ```bash
-    python app.py
+    python3 app.py
     ```
 4.  Open the application in your browser at `http://127.0.0.1:5000`.
 
@@ -52,5 +66,4 @@ This project allows users to upload their Google Timeline Location History data 
 -   **Python** (3.6+)
 -   **Flask** for the web framework
 -   **Folium** for rendering maps
--   **flatpickr** for date range selection in the UI
 
