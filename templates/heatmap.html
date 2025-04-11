@@ -1,0 +1,24 @@
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='heatmap.css') }}">
+</head>
+<body>
+    <form action="{{ url_for('filter_heatmap') }}" method="POST" class="date-range">
+        <label for="daterange">Select Date Range:</label>
+        <input id="daterange" name="daterange" placeholder="YYYY-MM-DD to YYYY-MM-DD" required>
+        <button type="submit">Filter Heatmap</button>
+    </form>
+
+    <iframe src="/static/heatmap.html" width="100%" height="800px"></iframe>
+
+    <br>
+    <a href="/">Upload another file</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        flatpickr("#daterange", {
+            mode: "range",
+            dateFormat: "Y-m-d"
+        });
+    </script>
+</body>

@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.date-range {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.date-range label {
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.date-range input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.date-range button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.date-range button:hover {
+    background-color: #45a049;
+}
+
+iframe {
+    border: none;
+}
+
+a {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

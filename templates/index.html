@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Travel Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Visualize Your Google Timeline Data</h1>
+            <h1>(Heat Map)</h1>
+        </header>
+        
+        <section class="instructions">
+            <h2>How to Get Your Google Timeline Data</h2>
+            <ol>
+                <li>Open Google Maps on your mobile device.</li>
+                <li>Tap the profile icon in the top right corner.</li>
+                <li>Select "Your Timeline" from the menu.</li>
+                <li>Tap the three dots ("...") in the top right corner.</li>
+                <li>Choose "Location & privacy settings."</li>
+                <li>Select "Export Timeline data."</li>
+                <li>Send the file to yourself through your preferred method.</li>
+            </ol>
+        </section>
+
+        <section class="upload-form">
+            <h2>Upload Your Timeline Data</h2>
+            <form action="/" method="POST" enctype="multipart/form-data">
+                <label for="file">Choose a JSON file:</label>
+                <input type="file" name="file" id="file" accept=".json" required>
+                <button type="submit">Generate Heatmap</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
