@@ -2,6 +2,14 @@
 
 This project allows users to upload their Google Timeline Location History data (in JSON format) and generate a heatmap visualizing the locations they have visited over a specific date range.
 
+## Motivation
+
+I created this project because I wanted an easy way to visualize my own travel patterns using my Google Timeline data. As someone who loves to explore new places, I found it fascinating to look back at where I had been over time. However, the raw JSON data can be overwhelming to analyze. This project allows me to see my travels on a simple heatmap, making it much easier to reflect on my journeys.
+
+For example, after uploading my Google Timeline data, I was able to see that I had visited certain cities more frequently during specific months. The heatmap showed concentrated areas of travel, which helped me realize how often I go to certain spots for work, leisure, or vacations. It made me appreciate how much I move around without always realizing it!
+
+I wanted to share this tool with others so they can easily explore and reflect on their own travel data in a visual way.
+
 ## Features
 
 -   **Upload Google Timeline Data**: Upload a `.json` file exported from your Google Timeline.
